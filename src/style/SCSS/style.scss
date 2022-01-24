@@ -1,0 +1,43 @@
+/* 
+Application mise en forme avec bootstrap, le code Scss ne sert qu'à personnaliser le thème bootstrap et apporter quelques animations.
+
+Lancers Sass : 
+sass --watch frontend/src/style/SCSS/style.scss:frontend/src/style/CSS/style.css 
+*/
+
+@import "variables_overrides";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+i
+{
+    font-size: 1.4em;
+}
+
+.mini
+{
+    font-size: 0.6em;
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+#logo{
+    width: 15%;
+    min-width: 4rem;
+    margin-right: 2%;
+}
+
+//accessibilité
+:focus
+{
+    border: solid 3px $primary;
+}
+
+.thumb-button, .flag-button, .user-button
+{
+    font-size: 1.4em;
+    vertical-align:baseline ;
+    padding: 0 0.4em;
+}
