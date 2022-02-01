@@ -27,6 +27,8 @@ const ApiContext = createContext({
     setloadedComments:() =>{},
     loadedPosts:[],
     loadedComments:[],
+    cloudName:[],
+    cloudinaryFolder:[]
 });
 
 export function ApiContextProvider(props) { //à chaque fois que FetchContext est modifié, son state sera modifié en temps réel par ce composant. Ce composant passe les fonctions qu'il contient et les rend accessible au reste du projet.
@@ -115,6 +117,8 @@ export function ApiContextProvider(props) { //à chaque fois que FetchContext es
         likePost:likePost,
         loadedPosts:loadedPosts,
         loadedComments:loadedComments,
+        cloudName:"drd4nkpfz",
+        cloudinaryFolder:"Groupomania-pictures/"
     }; 
     
         return (<ApiContext.Provider value={context}> {/* Ce bout de code sert à passer le contenu de favorite context au reste du projet. */}

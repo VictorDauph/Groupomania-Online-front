@@ -3,9 +3,10 @@
 import {useContext, useState, useEffect } from "react";
 
 import {Card,Button} from 'react-bootstrap'
-
+import { Image } from 'cloudinary-react';
 //importaion du contexte d'authentification
 import {AuthContext} from "../../authentification/authContext";
+import ApiContext from "../../ApiHandling/ApiContext";
 
 //importation du composant qui gère les likes
 import LikeInterface from "../layout/likeInterface";
@@ -17,11 +18,13 @@ import { useHistory } from "react-router-dom";
 
 
 function PostItem(props) {
+    console.log("cloudName",process.env.REACT_APP_CLOUDINARY_NAME)
     //history est est utilisée pour la navigation programmatique
     const history = useHistory() 
 
     //importation du contexte d'authentification
     const AuthCtx = useContext(AuthContext)
+    const ApiCtx = useContext(ApiContext)
 
     //Message sert à afrficher les messages d'erreurs en provenance de l'API
     const [message, changeMessage] = useState("")
@@ -100,6 +103,8 @@ function PostItem(props) {
         history.push("/singlePost")
     }
 
+
+
     return (    
         <div className="raw my-3 mx-3">
                 <Card className="col col-md-6 mx-auto bg-secondary">
@@ -119,7 +124,10 @@ function PostItem(props) {
                                 </p>
                         </Card.Text>
                     </Card.Body>
-                    <Card.Img variant="top" src={`https://victor-groupomania-api.herokuapp.com/images/${props.imageUrl}`} />
+                    <Image
+                        cloudName={ApiCtx.cloudName} 
+                        publicId={ApiCtx.cloudinaryFolder+props.imageUrl}
+                    />
                 </Card>
                 <p className="text-danger col col-md-6 mx-auto">{message}</p>
                
@@ -127,4 +135,6 @@ function PostItem(props) {
     )
 }
 export default PostItem;
+
+                   /*  <Card.Img variant="top" src={`https://victor-groupomania-api.herokuapp.com/images/${props.imageUrl}`} /> */
 

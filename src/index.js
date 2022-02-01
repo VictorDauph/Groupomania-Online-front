@@ -14,6 +14,8 @@ import App from './App';
 import {AuthContextProvider} from "./authentification/authContext"
 import { ApiContextProvider } from './ApiHandling/ApiContext';
 
+//Cette ligne appelle le plugin dotenv qui sécurise l'environnement du serveur
+require('dotenv').config()
 
 ReactDOM.render(
   <AuthContextProvider>
