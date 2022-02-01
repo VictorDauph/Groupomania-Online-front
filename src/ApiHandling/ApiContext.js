@@ -98,7 +98,7 @@ export function ApiContextProvider(props) { //à chaque fois que FetchContext es
             }
             console.log("like body :",body)
             AuthCtx.initHeadersForFetch("POST",body).then( (init)=>{
-                fetch(`https://victor-groupomania-api.herokuapp.com//api/post/${postId}/like`,init).then(res => res.json()).then(
+                fetch(`https://victor-groupomania-api.herokuapp.com/api/post/${postId}/like`,init).then(res => res.json()).then(
                     data => {
                         console.log("réponse like :", data.message)
                         resolve(data)
