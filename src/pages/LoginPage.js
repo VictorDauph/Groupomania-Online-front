@@ -16,7 +16,7 @@ import Header from "../components/layout/Header";
 
 function LoginPage(props){
     const title= "Connexion au compte utilisateur"
-    const [message, changeMessage] = useState("")
+    const [message, changeMessage] = useState("Demo user: demo@gmail.com Demo Password: Demo1235")
     const history = useHistory() //history est est utilisée pour la navigation programmatique
     const AuthCtx = useContext(AuthContext) //Authcontext contient les variables fonctions liées au login, logout et vérification d'authentification pour gérer les Protected Routes
 
