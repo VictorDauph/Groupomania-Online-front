@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+Projet Groupomania:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un réseau social style 9gag, qui permet à des utilisateurs appartenant à une organisation de partager et de liker des images. La réalisation du projet englobe l'intégralité de l'application: création d'une base de données, du serveur beckend et de son API et du serveur frontend avec React.
 
-## Available Scripts
+La base de données utilisée pour ce projet est une base de donnée MYSQL. L'API pilote la base de donnée et son installation via Sequelize. Elle utilise des migrations pour créer les tables et les relations entre tables.
 
-In the project directory, you can run:
+Les images sont stockées sur le cloud cloudinary.
 
-### `npm start`
+-----------------------------------------------------------------------------------------------------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Version en ligne:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Accéder à l'application (Serveur React en ligne):
+https://dashboard.heroku.com/apps/victor-groupomania-frontend/deploy/heroku-git
 
-### `npm test`
+Serveur frontend repo github:
+https://github.com/VictorDauph/Groupomania-Online-front
+-----------------------------------------------------------------------------------------------------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API version prod:
+https://dashboard.heroku.com/apps/victor-groupomania-api/deploy/heroku-git
 
-### `npm run build`
+API repo github:
+https://github.com/VictorDauph/Groupomania-Online-API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+BDD:
+groupomania_bdd
+https://db4free.net/phpMyAdmin/index.php?route=/sql&db=groupomania_bdd&table=Users&pos=0
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-----------------------------------------------------------------------------------------------------------
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
