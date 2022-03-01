@@ -1,4 +1,4 @@
-Version en ligne deployée suyr heroku:
+Version en ligne deployée suy heroku:
 https://dashboard.heroku.com/apps/victor-groupomania-frontend/deploy/heroku-git
 
 nom de l'application:
@@ -6,6 +6,9 @@ victor-groupomania-frontend
 
 pour mettre à jour sur Heroku
 git push heroku master
+
+pour mettre à jour sur repo git
+git push 
 
 pour voir les logs du serveur 
 heroku logs --tail  
