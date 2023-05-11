@@ -6,7 +6,7 @@ La base de données utilisée pour ce projet est une base de donnée MYSQL. L'AP
 
 Les images sont stockées sur le cloud cloudinary.
 
------------------------------------------------------------------------------------------------------------
+---
 
 Version en ligne:
 
@@ -15,7 +15,8 @@ https://dashboard.heroku.com/apps/victor-groupomania-frontend/deploy/heroku-git
 
 Serveur frontend repo github:
 https://github.com/VictorDauph/Groupomania-Online-front
------------------------------------------------------------------------------------------------------------
+
+---
 
 API version prod:
 https://dashboard.heroku.com/apps/victor-groupomania-api/deploy/heroku-git
@@ -27,6 +28,4 @@ BDD:
 groupomania_bdd
 https://db4free.net/phpMyAdmin/index.php?route=/sql&db=groupomania_bdd&table=Users&pos=0
 
-
------------------------------------------------------------------------------------------------------------
-
+---
