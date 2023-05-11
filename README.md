@@ -4,7 +4,7 @@ Ce projet est un réseau social style 9gag, qui permet à des utilisateurs appar
 
 La base de données utilisée pour ce projet est une base de donnée MYSQL. L'API pilote la base de donnée et son installation via Sequelize. Elle utilise des migrations pour créer les tables et les relations entre tables.
 
-Les images sont stockées sur le cloud cloudinary.
+Les images sont stockées sur le cloud cloudinary. .
 
 ---
 
